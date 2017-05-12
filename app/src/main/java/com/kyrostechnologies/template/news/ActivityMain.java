@@ -101,6 +101,10 @@ public class ActivityMain extends AppCompatActivity {
             case R.id.nav_setting:
                 fragment = new FragmentSetting();
                 break;
+            case R.id.nav_aboutus:
+                Intent intent=new Intent(ActivityMain.this,AboutUs.class);
+                startActivity(intent);
+                break;
         }
         if (fragment != null) {
             FragmentManager fragmentManager = getSupportFragmentManager();

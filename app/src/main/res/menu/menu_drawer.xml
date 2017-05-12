@@ -20,6 +20,10 @@
             android:title="@string/title_nav_saved"
             app:actionLayout="@layout/menu_counter"/>
         <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/about_us_icon"
+            android:title="About us" />
+        <item
             android:id="@+id/nav_setting"
             android:icon="@drawable/ic_nav_setting"
             android:title="@string/title_nav_setting" />

@@ -20,8 +20,8 @@ android {
                 variant.outputs.each { output ->
                     def appName = "News App"
                     def outputFile = output.outputFile
-                    if(outputFile!=null && outputFile.name.endsWith('.apk')){
-                        def fileName = appName +" "+ defaultConfig.versionName + ".apk"
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = appName + " " + defaultConfig.versionName + ".apk"
                         output.outputFile = new File((String) outputFile.parent, (String) fileName)
                     }
                 }
@@ -34,7 +34,6 @@ android {
  * Be careful when update dependencies, different version library may caused error */
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.0'
     compile 'com.android.support:cardview-v7:24.2.0'
     compile 'com.android.support:recyclerview-v7:24.2.0'
@@ -42,4 +41,6 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.android.support:support-v4:24.2.0'
     compile 'com.balysv:material-ripple:1.0.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
 }
