@@ -22,7 +22,7 @@ import com.kyrostechnologies.template.news.model.News;
 import com.squareup.picasso.Picasso;
 
 public class ActivityNewsDetails extends AppCompatActivity {
-    public static final String EXTRA_OBJC = "com.app.sample.news.EXTRA_OBJC";
+    public static final String EXTRA_OBJC = "com.app.sample.ic_launcher.EXTRA_OBJC";
 
     // give preparation animation activity transition
     public static void navigate(AppCompatActivity activity, View transitionImage, News obj) {

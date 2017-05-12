@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ActivityChannelDetails extends AppCompatActivity {
-    public static final String EXTRA_OBJCT = "com.app.sample.news.CHANNEL";
+    public static final String EXTRA_OBJCT = "com.app.sample.ic_launcher.CHANNEL";
 
     // give preparation animation activity transition
     public static void navigate(AppCompatActivity activity, View transitionImage, Channel obj) {

@@ -33,7 +33,7 @@ public class GlobalVariable extends Application {
         return allNews;
     }
 
-    // news by channel
+    // ic_launcher by channel
 
     public List<News> getNewsPolitics() {
         return newsPolitics;
@@ -59,7 +59,7 @@ public class GlobalVariable extends Application {
         return newsTechnology;
     }
 
-    // news by category
+    // ic_launcher by category
 
     public List<News> getNewsLatest() {
         return allNews.subList(0, 7);

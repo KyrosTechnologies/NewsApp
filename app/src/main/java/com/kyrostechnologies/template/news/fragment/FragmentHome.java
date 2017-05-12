@@ -71,7 +71,7 @@ public class FragmentHome extends Fragment {
         List<String> items_tab = Constant.getHomeCatgeory(getActivity());
         tabLayout.addTab(tabLayout.newTab().setText(items_tab.get(0)), true);
 
-        // display first news
+        // display first ic_launcher
         displayListNews(getNewsByCategory(items_tab.get(0)));
 
         for (int i=1; i< items_tab.size(); i++){
