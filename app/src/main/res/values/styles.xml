@@ -1,0 +1,77 @@
+<resources>
+
+    <style name="AppTheme" parent="BaseTheme"/>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item> 
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item> 
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item> 
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DrawerStyle" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="colorControlHighlight">#0D000000</item> 
+        <item name="listPreferredItemHeightSmall">60dp</item>
+    </style>
+    <style name="DrawerItemTextStyle" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Checkbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorPrimary">@color/colorPrimary</item> 
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item> 
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item> 
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleWithShadow">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#cc000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TextAppearance.CardContent.Headline.Medium" parent="">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/abc_text_size_title_material</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80FFFFFF</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+    <style name="RippleStyleBlack" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">#8096989A</item>
+    </style>
+
+
+</resources>

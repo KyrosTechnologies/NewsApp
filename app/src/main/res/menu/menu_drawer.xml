@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/title_nav_home"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_channel"
+            android:icon="@drawable/ic_nav_channel"
+            android:title="@string/title_nav_channel"/>
+        <item
+            android:id="@+id/nav_saved"
+            android:icon="@drawable/ic_nav_saved"
+            android:title="@string/title_nav_saved"
+            app:actionLayout="@layout/menu_counter"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_nav_setting"
+            android:title="@string/title_nav_setting" />
+    </group>
+
+</menu>

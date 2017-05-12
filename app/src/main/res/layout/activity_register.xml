@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="false"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/news_header_details_size"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:text="and you can discover best news around the world "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_xlarge"
+            android:paddingRight="@dimen/spacing_xlarge"
+            android:paddingTop="@dimen/spacing_xlarge">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        android:src="@drawable/ic_form_people" />
+
+                    <EditText
+                        android:id="@+id/input_name"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xxlarge"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="Full Name"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAccent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        android:src="@drawable/ic_form_mail" />
+
+                    <EditText
+                        android:id="@+id/input_email"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xxlarge"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAccent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        android:src="@drawable/ic_form_city" />
+
+                    <EditText
+                        android:id="@+id/input_city"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xxlarge"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="Country"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAccent" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_signup"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/grey_dark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

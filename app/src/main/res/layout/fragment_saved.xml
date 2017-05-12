@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollingCache="true" />
+
+    <LinearLayout
+        android:id="@+id/lyt_notfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_large"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_no_item"
+            android:tint="@color/grey_medium" />
+
+        <TextView
+            android:id="@+id/txt_notfound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Item"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold"
+            android:textColor="@color/grey_medium" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_header_details_size"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <View
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_overlay" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingRight="5dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:padding="@dimen/spacing_mlarge"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/channel"
+                android:minWidth="60dp"
+                android:gravity="center"
+                android:text="Sport"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/spacing_medium"
+                android:paddingRight="@dimen/spacing_medium"
+                android:paddingBottom="@dimen/spacing_small"
+                android:paddingTop="@dimen/spacing_xsmall"
+                android:layout_marginBottom="@dimen/spacing_middle"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:text="@string/short_lorem_ipsum"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_mlarge"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_date"
+                    android:tint="@color/grey_hard" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:text="16 Mar 2016"
+                    android:textColor="@color/grey_hard"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/content"
+                android:text="@string/lorem_ipsum"
+                android:layout_width="match_parent"
+                android:textColor="@color/grey_dark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_mlarge"
+        android:src="@drawable/ic_nav_saved_outline"
+        android:tint="@android:color/white"
+        android:clickable="true"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>
